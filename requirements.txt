@@ -1,0 +1,7 @@
+python_dotenv
+python_dateutil
+hikari
+hikari-arc
+uvloop
+gcsa
+peewee

@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  bot:
+    build: . 
+    volumes:
+      - ./hanabot/data:/hanabot/data
+    environment:
+      - bot_api_token=YOUR BOT TOKEN
+      - calanderid=THE CALANDERID
+      - eventid=THE RECURRING EVENT ID
+      - guldIDs=THE GUILDS YOU WANT THE COMMANDS TO SYNC TO SEPERATED BY A COMMA LEAVE EMPTY FOR NONE
+    container_name: hanabot
